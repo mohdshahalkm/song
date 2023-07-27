@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>music</title>
+    
+</head>
+<body>
+    <header>
+        
+        <h1>STACCATO</h1>
+ 
+        <nav class="nav">
+            <ul>
+                <li>
+                    <a href="#"title="Home">Home</a>
+                </li>
+                
+                <li>
+                    <a href="#" title="Contact Us">Your Library</a>
+                </li>
+                <li>
+                    <a href="#" title="Search">Search</a>
+                </li>
+                <li>
+                    <a href="#" title="favourite">favourite</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="text">
+        <h5>"Where words fail, music speaks"</h5>
+        <img class="button" src="play.png" alt="play" id="icon">
+        <audio id="song" src="Shahal.mp3" type="audio/mp3"></audio>
+    
+    </main>
+             <footer>
+                <center><p class="copy">Copyright &copy;2023 staccato. All rights reserved</p></center>
+             </footer>
+
+             <script>
+                   var song=document.getElementById('song');
+                   var icon=document.getElementById('icon');
+                   icon.onclick=function(){
+                    if(song.paused){
+                        song.play();
+                        icon.src="pause.png";
+                    }
+                     else{song.pause();
+                    icon.src="play.png";
+                   }
+                   }
+             </script>
+</body>
+</html>
